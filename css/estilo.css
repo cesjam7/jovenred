@@ -1,0 +1,66 @@
+body {
+  font-size: 16px;
+  font-family: Tahoma; }
+
+.cont {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 0;
+  overflow: hidden; }
+
+.header {
+  overflow: hidden;
+  background: #D12E2E; }
+  .header .logo {
+    display: block;
+    float: left; }
+  .header .menu {
+    float: right; }
+    .header .menu li {
+      display: inline-block;
+      margin: 23px 10px;
+      font-weight: bold; }
+      .header .menu li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff; }
+
+.posts {
+  overflow: hidden; }
+
+.post {
+  width: 300px;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top; }
+  .post .category {
+    position: absolute;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background: rgba(209, 46, 46, 0.75);
+    color: #fff;
+    font-weight: bold; }
+  .post figure {
+    height: 200px;
+    margin-bottom: 15px; }
+  .post h2 {
+    margin: 0 0 10px 0;
+    min-height: 60px;
+    line-height: 36px; }
+    .post h2 a {
+      text-decoration: none;
+      color: #222; }
+      .post h2 a:hover {
+        text-decoration: underline; }
+  .post .date {
+    font-size: 0.9rem; }
+
+.footer {
+  background: #111;
+  font-size: 0.9rem;
+  color: #fff; }
+  .footer p {
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=estilo.css.map */
