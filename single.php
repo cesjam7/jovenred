@@ -23,15 +23,30 @@
 				<div class="info">
 					<ul>
 						<li><i class="fa fa-calendar-o"></i> <?php the_date('d-m-Y'); ?></li>
-						<li><i class="fa fa-comment-o"></i> 0 comentarios</li>
-						<li><i class="fa fa-pencil-square-o"></i> César Aquino Maximiliano</li>
+						<?php $num_comments = get_comments_number();
+						if ( comments_open() ) {
+							if ( $num_comments == 0 ) {
+								$comments = __('0 comentarios');
+							} elseif ( $num_comments > 1 ) {
+								$comments = $num_comments . __(' comentarios');
+							} else {
+								$comments = __('1 comentario');
+							}
+							$write_comments = '<li><i class="fa fa-comment-o"></i> '. $comments.'</li>';
+						} else {
+							$write_comments =  __('<li><i class="fa fa-comment-o"></i> Comentarios desactivados</li>');
+						}
+						echo $write_comments ?>
+						<!--<li><i class="fa fa-pencil-square-o"></i> César Aquino Maximiliano</li>-->
 					</ul>
 				</div>
 				<div class="texto">
 					<?php the_content(); ?>
 				</div>
+							<p>&nbsp;</p>
+						<?php comments_template(); ?>
+							<p>&nbsp;</p>
 			</article>
-			<p>&nbsp;</p>
 		</section>
 	<?php endwhile;
 	endif; ?>	

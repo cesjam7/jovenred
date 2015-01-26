@@ -10,7 +10,12 @@
 					} ?></a>
 				</figure>
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<div><span class="date"><i class="fa fa-calendar-o"></i> <?php the_date('d-m-Y'); ?></span></div>
+				<div class="info">
+					<ul>
+						<li><i class="fa fa-calendar-o"></i> <?php the_date('d-m-Y'); ?></li>
+						<li><i class="fa fa-comment-o"></i> <?php echo get_comments_number(); ?></li>
+					</ul>
+				</div>
 			</div>
 		<?php endwhile;
 		else : ?>

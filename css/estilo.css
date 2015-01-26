@@ -1,7 +1,11 @@
 body {
   font-size: 16px;
   font-family: 'Noto Serif', serif;
-  background: #f1f1f1; }
+  background: #f1f1f1;
+  color: #333; }
+
+a:hover {
+  text-decoration: underline; }
 
 .cont {
   max-width: 1000px;
@@ -70,20 +74,27 @@ body {
 .article {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   background: #fff;
-  padding: 50px 10%; }
+  padding: 50px 10%;
+  margin-bottom: 40px; }
   .article h1 {
     font-size: 3rem;
     text-align: center;
     margin-top: 0; }
-  .article .info li {
-    display: inline-block;
-    margin: 0 10px 30px 10px;
-    font-size: 0.9rem; }
+  .article .info {
+    margin-bottom: 30px; }
   .article .texto {
     line-height: 2rem;
     font-size: 1.3rem; }
     .article .texto ul {
       margin-bottom: 20px; }
+
+.info li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 0.9rem; }
+  .info li a {
+    text-decoration: none;
+    color: #333; }
 
 .image {
   text-align: center;

@@ -7,8 +7,10 @@
 				<div class="texto">
 					<?php the_content(); ?>
 				</div>
+							<p>&nbsp;</p>
+						<?php comments_template(); ?>
+							<p>&nbsp;</p>
 			</article>
-			<p>&nbsp;</p>
 		</section>
 	<?php endwhile;
 	endif; ?>	
