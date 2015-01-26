@@ -1,6 +1,7 @@
 body {
 	font-size: 16px;
-	font-family: Tahoma;
+	font-family: 'Noto Serif', serif;
+	background: #f1f1f1;
 }
 .cont {
 	max-width: 1000px;
@@ -38,8 +39,12 @@ body {
 .post {
 	width: 300px;
 	margin: 15px;
+	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+	background: #fff;
+	padding: 0 15px 15px 15px;
 
 	.category {
 		position: absolute;
@@ -49,15 +54,23 @@ body {
 		background: rgba(209, 46, 46, 0.75);
 		color: #fff;
 		font-weight: bold;
+		margin-left: -15px;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 	figure {
+		width: 300px;
+		margin-left: -15px;
 		height: 200px;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 	h2 {
 		margin: 0 0 10px 0;
 		min-height: 60px;
-		line-height: 36px;
+		line-height: 30px;
 
 		a{
 			text-decoration: none;
@@ -70,6 +83,40 @@ body {
 	}
 	.date {
 		font-size: 0.9rem;
+	}
+}
+.article {
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+	background: #fff;
+	padding: 50px 10%;
+
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		margin-top: 0;
+	}
+	.info li {
+		display: inline-block;
+		margin: 0 10px 30px 10px;
+		font-size: 0.9rem;
+	}
+	.texto {
+		line-height: 2rem;
+		font-size: 1.3rem;
+
+		ul {
+			margin-bottom: 20px;
+		}
+	}
+}
+.image {
+	text-align: center;
+	line-height: 0px;
+	margin-top: 15px;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+
+	div {
+		opacity: 0.3;
 	}
 }
 .footer {
