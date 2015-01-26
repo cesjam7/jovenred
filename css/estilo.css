@@ -33,6 +33,10 @@ a:hover {
 .posts {
   overflow: hidden; }
 
+.tax {
+  font-size: 2.6rem;
+  text-align: center; }
+
 .post {
   width: 300px;
   margin: 15px;

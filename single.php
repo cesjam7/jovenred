@@ -38,6 +38,9 @@
 						}
 						echo $write_comments ?>
 						<!--<li><i class="fa fa-pencil-square-o"></i> César Aquino Maximiliano</li>-->
+						<?php if(is_user_logged_in()){
+							edit_post_link('Editar', '<li>', '</li>');
+						} ?>
 					</ul>
 				</div>
 				<div class="texto">
