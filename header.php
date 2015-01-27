@@ -25,3 +25,4 @@
 				</nav>
 			</div>
 		</header>
+		<div class="bloque-rojo"></div>
