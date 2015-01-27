@@ -4,5 +4,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="<?php bloginfo('template_directory'); ?>/js/script.js" type="text/javascript"></script>
+	<?php wp_footer(); ?>
 </body>
 </html>

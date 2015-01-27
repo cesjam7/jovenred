@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/estilo.css">
 	<link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/modernizr.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="container">
@@ -20,9 +22,7 @@
 				<a href="<?php echo home_url(); ?>" class="logo">
 					<img width="200" src="http://jovenred.com/wp-content/uploads/2011/07/logo.png" alt="">
 				</a>
-				<nav class="menu">
-					<?php wp_nav_menu( array( 'theme_location' => 'Principal' ) ); ?>
-				</nav>
+				<?php wp_nav_menu( array( 'theme_location' => 'Principal', 'container' => 'nav', 'container_class' => 'menu', 'container_id' => 'cssmenu' ) ); ?>
 			</div>
 		</header>
 		<div class="bloque-rojo"></div>
