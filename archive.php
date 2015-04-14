@@ -5,11 +5,14 @@
 		<?php while (have_posts()) : the_post();  ?>
 			<div class="post">
 				<div class="category"><?php the_category(' - ') ?></div>
-				<figure>
-					<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) { 
+				<figure><a href="<?php the_permalink(); ?>">
+					<?php if ( has_post_thumbnail() ) { 
 						the_post_thumbnail('thumbnail'); 
-					} ?></a>
-				</figure>
+					}else{
+						$category = get_the_category(); ?>
+						<img src="<?php bloginfo('template_directory'); ?>/images/category/<?php echo $category[0]->slug.".png"; ?>" alt="<?php echo $category[0]->name; ?>">
+					<?php } ?>
+				</a></figure>
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<div class="info">
 					<ul>

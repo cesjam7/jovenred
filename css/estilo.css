@@ -8,10 +8,9 @@ a:hover {
   text-decoration: underline; }
 
 .cont {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 15px 0;
-  overflow: hidden; }
+  max-width: 980px;
+  padding: 15px 10px;
+  margin: 0 auto; }
 
 .bloque-rojo {
   height: 83px; }
@@ -46,7 +45,7 @@ a:hover {
 
 .post {
   width: 300px;
-  margin: 15px;
+  margin: 15px 11px;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -81,6 +80,14 @@ a:hover {
         text-decoration: underline; }
   .post .date {
     font-size: 0.9rem; }
+
+.historia {
+  text-align: center; }
+  .historia a {
+    color: #222;
+    text-decoration: none; }
+    .historia a:hover {
+      text-decoration: underline; }
 
 .article {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
@@ -121,6 +128,12 @@ a:hover {
   color: #fff; }
   .footer p {
     margin-bottom: 0; }
+
+.wp-pagenavi {
+  font-size: 1.3rem;
+  margin-top: 20px; }
+  .wp-pagenavi a, .wp-pagenavi span {
+    color: #333; }
 
 /*
 *
