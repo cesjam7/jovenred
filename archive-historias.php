@@ -7,7 +7,7 @@
 			<?php while (have_posts()) : the_post();  ?>
 				<div class="historia">
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					<div class="info">
+					<div class="details">
 						<ul>
 							<li><i class="fa fa-calendar-o"></i> <?php the_date('d-m-Y'); ?></li>
 							<li><i class="fa fa-comment-o"></i> <?php echo get_comments_number(); ?></li>

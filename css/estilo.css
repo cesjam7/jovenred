@@ -44,11 +44,6 @@ a:hover {
   text-align: center; }
 
 .post {
-  width: 300px;
-  margin: 15px 11px;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   background: #fff;
   padding: 0 15px 15px 15px; }
@@ -65,14 +60,17 @@ a:hover {
       color: #fff;
       text-decoration: none; }
   .post figure {
-    width: 300px;
+    width: 306px;
     margin-left: -15px;
     height: 200px;
     margin-bottom: 10px; }
+    .post figure img {
+      width: 100%; }
   .post h2 {
     margin: 0 0 10px 0;
     min-height: 60px;
-    line-height: 30px; }
+    line-height: 30px;
+    font-size: 1.5rem; }
     .post h2 a {
       text-decoration: none;
       color: #222; }
@@ -97,8 +95,9 @@ a:hover {
   .article h1 {
     font-size: 3rem;
     text-align: center;
-    margin-top: 0; }
-  .article .info {
+    margin-top: 0;
+    font-size: 2rem; }
+  .article .details {
     margin-bottom: 30px; }
   .article .texto {
     line-height: 2rem;
@@ -106,13 +105,15 @@ a:hover {
     .article .texto ul {
       margin-bottom: 20px; }
 
-.info li {
+.details ul {
+  padding-left: 0; }
+.details li {
   display: inline-block;
   margin-right: 20px;
   font-size: 0.9rem; }
-  .info li a {
-    text-decoration: none;
-    color: #333; }
+.details a {
+  text-decoration: none;
+  color: #333; }
 
 .image {
   text-align: center;

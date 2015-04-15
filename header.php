@@ -8,12 +8,11 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="author" content="Diseño y desarrollo del sitio web por César Aquino Maximiliano (www.jovenred.com).">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.min.css">
+	<link rel="stylesheet" href="http://cesjam7.github.io/clauss/clauss.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/estilo.css">
 	<link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/modernizr.js"></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="container">

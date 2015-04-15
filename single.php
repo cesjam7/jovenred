@@ -20,9 +20,10 @@
 		<section class="cont posts">
 			<article class="article">
 				<h1><?php the_title(); ?></h1>
-				<div class="info">
+				<div class="details">
 					<ul>
 						<li><i class="fa fa-calendar-o"></i> <?php the_date('d-m-Y'); ?></li>
+						<li><i class="fa fa-server"></i> <?php the_category(' - ') ?></li>
 						<?php $num_comments = get_comments_number();
 						if ( comments_open() ) {
 							if ( $num_comments == 0 ) {
