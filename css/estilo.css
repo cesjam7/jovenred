@@ -1,27 +1,27 @@
 body {
   font-size: 16px;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Open Sans';
   background: #f1f1f1;
   color: #333; }
+
+.cl {
+  clear: both; }
 
 a:hover {
   text-decoration: underline; }
 
-.cont {
-  max-width: 980px;
-  padding: 15px 10px;
-  margin: 0 auto; }
-
 .bloque-rojo {
   height: 83px; }
+
+.page .bloque-rojo {
+  height: 100px; }
 
 .header {
   background: rgba(204, 2, 2, 0.8);
   position: fixed;
   width: 100%;
-  z-index: 2; }
-  .header .cont {
-    padding: 10px 0 5px 0; }
+  z-index: 2;
+  padding: 10px; }
   .header .logo {
     display: block;
     float: left; }
@@ -40,43 +40,43 @@ a:hover {
   overflow: hidden; }
 
 .tax {
-  font-size: 2.6rem;
+  font-size: 4rem;
   text-align: center; }
 
-.post {
+.box {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   background: #fff;
-  padding: 0 15px 15px 15px; }
-  .post .category {
+  padding: 15px;
+  margin: 10px 0; }
+  .box .category {
     position: absolute;
     padding: 4px 8px;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     background: rgba(209, 46, 46, 0.75);
     color: #fff;
     font-weight: bold;
-    margin-left: -15px; }
-    .post .category a {
+    margin-left: -15px;
+    margin-top: -15px; }
+    .box .category a {
       color: #fff;
       text-decoration: none; }
-  .post figure {
-    width: 306px;
-    margin-left: -15px;
-    height: 200px;
+  .box figure {
     margin-bottom: 10px; }
-    .post figure img {
-      width: 100%; }
-  .post h2 {
+    .box figure img {
+      width: 100%;
+      height: auto; }
+  .box h2 {
     margin: 0 0 10px 0;
     min-height: 60px;
     line-height: 30px;
-    font-size: 1.5rem; }
-    .post h2 a {
+    font-size: 2rem; }
+    .box h2 a {
       text-decoration: none;
       color: #222; }
-      .post h2 a:hover {
+      .box h2 a:hover {
         text-decoration: underline; }
-  .post .date {
+  .box .date {
     font-size: 0.9rem; }
 
 .historia {
@@ -93,15 +93,16 @@ a:hover {
   padding: 50px 10%;
   margin-bottom: 40px; }
   .article h1 {
-    font-size: 3rem;
+    line-height: 50px;
     text-align: center;
-    margin-top: 0;
-    font-size: 2rem; }
+    margin: 0 0 25px 0;
+    font-size: 4rem;
+    font-weight: bold; }
   .article .details {
     margin-bottom: 30px; }
   .article .texto {
-    line-height: 2rem;
-    font-size: 1.3rem; }
+    line-height: 3rem;
+    font-size: 2rem; }
     .article .texto ul {
       margin-bottom: 20px; }
 
@@ -110,7 +111,7 @@ a:hover {
 .details li {
   display: inline-block;
   margin-right: 20px;
-  font-size: 0.9rem; }
+  font-size: 1.4rem; }
 .details a {
   text-decoration: none;
   color: #333; }
@@ -118,7 +119,7 @@ a:hover {
 .image {
   text-align: center;
   line-height: 0px;
-  margin-top: 15px;
+  margin: 20px 0;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15); }
   .image div {
     opacity: 0.3; }
@@ -128,10 +129,12 @@ a:hover {
   font-size: 0.9rem;
   color: #fff; }
   .footer p {
-    margin-bottom: 0; }
+    margin: 20px 0;
+    font-size: 1.6rem; }
 
 .wp-pagenavi {
-  font-size: 1.3rem;
+  font-size: 2rem;
+  text-align: center;
   margin-top: 20px; }
   .wp-pagenavi a, .wp-pagenavi span {
     color: #333; }

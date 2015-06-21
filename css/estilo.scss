@@ -1,104 +1,103 @@
 body {
 	font-size: 16px;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Open Sans';
 	background: #f1f1f1;
 	color: #333;
+}
+.cl {
+  clear: both;
 }
 a:hover {
 	text-decoration: underline;
 }
-.cont {
-	max-width: 980px;
-  padding: 15px 10px;
-	margin: 0 auto;
-}
 .bloque-rojo {
 	height: 83px;
+}
+.page .bloque-rojo {
+  height: 100px;
 }
 .header {
 	background: rgba(204, 2, 2, 0.8);
 	position: fixed;
 	width: 100%;
 	z-index: 2;
+  padding: 10px;
 
-	.cont {
-		padding: 10px 0 5px 0;
-	}
-	.logo {
-		display: block;
-		float: left;
-	}
-	.menu {
-		float: right;
+  .logo {
+    display: block;
+    float: left;
+  }
+  .menu {
+    float: right;
 
-		li {
-			display: inline-block;
-			margin: 23px 15px;
-			font-weight: bold;
+    li {
+     display: inline-block;
+     margin: 23px 15px;
+     font-weight: bold;
 
-			a {
-				text-decoration: none;
-				text-transform: uppercase;
-				color: #fff;
-			}
-		}
-	}
+     a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}
 }
 .posts {
 	overflow: hidden;
 }
 .tax {
-	font-size: 2.6rem;
+	font-size: 4rem;
 	text-align: center;
 }
-.post {
+.box {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 	background: #fff;
-	padding: 0 15px 15px 15px;
+	padding: 15px;
+  margin: 10px 0;
 
-	.category {
-		position: absolute;
-		padding: 4px 8px;
-		text-transform: uppercase;
-		font-size: 0.8rem;
-		background: rgba(209, 46, 46, 0.75);
-		color: #fff;
-		font-weight: bold;
-		margin-left: -15px;
-
-		a {
-			color: #fff;
-			text-decoration: none;
-		}
-	}
-	figure {
-		width: 306px;
-		margin-left: -15px;
-		height: 200px;
-		margin-bottom: 10px;
-
-    img {
-      width: 100%;
-    }
-	}
-	h2 {
-		margin: 0 0 10px 0;
-		min-height: 60px;
-		line-height: 30px;
+  .category {
+    position: absolute;
+    padding: 4px 8px;
+    text-transform: uppercase;
     font-size: 1.5rem;
+    background: rgba(209, 46, 46, 0.75);
+    color: #fff;
+    font-weight: bold;
+    margin-left: -15px;
+    margin-top: -15px;
 
-		a{
-			text-decoration: none;
-			color: #222;
+    a {
+     color: #fff;
+     text-decoration: none;
+   }
+ }
+ figure {
+  margin-bottom: 10px;
 
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
-	.date {
-		font-size: 0.9rem;
-	}
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+h2 {
+  margin: 0 0 10px 0;
+  min-height: 60px;
+  line-height: 30px;
+  font-size: 2rem;
+
+  a{
+   text-decoration: none;
+   color: #222;
+
+   &:hover {
+    text-decoration: underline;
+  }
+}
+}
+.date {
+  font-size: 0.9rem;
+}
 }
 .historia {
   text-align: center;
@@ -119,22 +118,23 @@ a:hover {
 	margin-bottom: 40px;
 
 	h1 {
-		font-size: 3rem;
-		text-align: center;
-		margin-top: 0;
+		line-height: 50px;
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .details {
+    margin-bottom: 30px;
+  }
+  .texto {
+    line-height: 3rem;
     font-size: 2rem;
-	}
-	.details {
-		margin-bottom: 30px;
-	}
-	.texto {
-		line-height: 2rem;
-		font-size: 1.3rem;
 
-		ul {
-			margin-bottom: 20px;
-		}
-	}
+    ul {
+     margin-bottom: 20px;
+   }
+ }
 }
 .details {
 
@@ -142,19 +142,19 @@ a:hover {
     padding-left: 0;
   }
   li {
-	display: inline-block;
-	margin-right: 20px;
-	font-size: 0.9rem;
-  }
-	a {
-		text-decoration: none;
-		color: #333;
-	}
+   display: inline-block;
+   margin-right: 20px;
+   font-size: 1.4rem;
+ }
+ a {
+  text-decoration: none;
+  color: #333;
+}
 }
 .image {
 	text-align: center;
 	line-height: 0px;
-	margin-top: 15px;
+	margin: 20px 0;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 
 	div {
@@ -167,11 +167,13 @@ a:hover {
 	color: #fff;
 
 	p {
-		margin-bottom: 0;
-	}
+    margin: 20px 0;
+    font-size: 1.6rem;
+  }
 }
 .wp-pagenavi {
-  font-size: 1.3rem;
+  font-size: 2rem;
+  text-align: center;
   margin-top: 20px;
 
   a, span {

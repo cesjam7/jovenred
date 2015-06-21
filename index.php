@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <center>
+	<br>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Enlaces index jovenred 728x15 -->
 	<ins class="adsbygoogle"
@@ -10,12 +11,11 @@
 		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 </center>
-<section class="cont posts">
+<section class="row">
 	<?php if (have_posts()) : $c=0; ?>
-		<?php while (have_posts()) : the_post(); $c++;
-			if($c==1){ echo '<div class="row">';}  ?>
-			<div class="column col-4">
-				<div class="post">
+		<?php while (have_posts()) : the_post(); $c++; ?>
+			<div <?php post_class("column col-sm-4"); ?>>
+				<div class="box">
 					<div class="category"><?php the_category(' - ') ?></div>
 					<figure><a href="<?php the_permalink(); ?>">
 						<?php if ( has_post_thumbnail() ) { 
@@ -24,7 +24,8 @@
 							$category = get_the_category(); ?>
 							<img src="<?php bloginfo('template_directory'); ?>/images/category/<?php echo $category[0]->slug.".png"; ?>" alt="<?php echo $category[0]->name; ?>">
 							<?php } ?>
-						</a></figure>
+						</a>
+					</figure>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<div class="details">
 						<ul>
@@ -34,14 +35,13 @@
 					</div>
 				</div>
 			</div>
-		<?php if($c==3){ echo '</div>'; $c=0; }
-			endwhile;
+		<?php if($c==3){echo '<div class="cl"></div>'; $c==0; }
+		endwhile;
 		else : ?>
 		<p>No se encontraron publicaciones.</p>
 	<?php endif; ?>	
 	<?php wp_reset_query(); ?>
-	<br>
-	<?php wp_pagenavi(); ?>
-	<p>&nbsp;</p>
 </section>
+<?php wp_pagenavi(); ?>
+<p>&nbsp;</p>
 <?php get_footer(); ?>
