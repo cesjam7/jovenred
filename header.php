@@ -4,6 +4,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="ZW--dZI4J7uUqzw9tNP82oJ47mPzk9NOlSX602bUj20" />
 	<title><?php if (is_home()) { echo bloginfo('name'); }else{ wp_title(''); echo " » "; echo bloginfo('name'); } ?></title>
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="author" content="Diseño y desarrollo del sitio web por César Aquino Maximiliano (www.jovenred.com).">

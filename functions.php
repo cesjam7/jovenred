@@ -46,4 +46,19 @@ function special_nav_class($classes, $item){
      return $classes;
 }
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function adsense_lineal(){
+  echo '<center>
+  <br>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Enlaces index jovenred 728x15 -->
+  <ins class="adsbygoogle"
+  style="display:inline-block;width:728px;height:15px"
+  data-ad-client="ca-pub-0420689494975057"
+  data-ad-slot="8388854713"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</center>';
+}
 ?>

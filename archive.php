@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 <section class="row">
 	<h1 class="tax"><?php wp_title(''); ?></h1>
+	<?php adsense_lineal(); ?>
 	<?php if (have_posts()) : $c=0; ?>
 		<?php while (have_posts()) : the_post(); $c++; ?>
 			<div <?php post_class("column col-sm-4"); ?>>
 				<div class="box">
+					<div class="category"><?php the_category(' - ') ?></div>
 					<figure><a href="<?php the_permalink(); ?>">
 						<?php if ( has_post_thumbnail() ) { 
 							the_post_thumbnail('thumbnail'); 

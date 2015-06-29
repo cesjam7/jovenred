@@ -11,7 +11,7 @@ a:hover {
   text-decoration: underline; }
 
 .bloque-rojo {
-  height: 83px; }
+  height: 90px; }
 
 .page .bloque-rojo {
   height: 100px; }
@@ -445,5 +445,7 @@ a:hover {
 
   #cssmenu .submenu-button.submenu-opened:after {
     display: none; } }
+.searchform {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=estilo.css.map */
