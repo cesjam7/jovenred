@@ -21,6 +21,14 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 /**
+ *
+ * Post format
+ *
+ */
+
+add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
+
+/**
  * Registrar dos menus para cabecera y footer.
  * 
  */
@@ -61,4 +69,16 @@ function adsense_lineal(){
   </script>
 </center>';
 }
+
+// Limit character excerpt
+function custom_excerpt_length( $length ) {
+  return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Change [...]
+function new_excerpt_more( $more ) {
+  return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 ?>

@@ -1,7 +1,6 @@
 body {
 	font-size: 16px;
 	font-family: 'Open Sans';
-	background: #f1f1f1;
 	color: #333;
 }
 .cl {
@@ -9,6 +8,13 @@ body {
 }
 a:hover {
 	text-decoration: underline;
+}
+.center {
+  text-align: center;
+}
+.img-responsive-o {
+  width: 100%;
+  height: auto;
 }
 .bloque-rojo {
 	height: 90px;
@@ -45,6 +51,30 @@ a:hover {
 }
 .posts {
 	overflow: hidden;
+}
+.post {
+  margin-top: 30px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  h2 {
+    margin-bottom: 30px;
+    a {
+      color: #333;
+    }
+  }
+  .nav {
+    margin-bottom: 10px;
+    font-size: 14px;
+    li {
+      margin-right: 20px;
+      a {
+        padding: 0;
+        display: initial;
+        color: #333;
+      }
+    }
+  }
 }
 .tax {
 	font-size: 4rem;
@@ -490,4 +520,7 @@ h2 {
 }
 .searchform {
   margin-top: 20px;
+}
+.input-group .form-control {
+  z-index: 1;
 }
