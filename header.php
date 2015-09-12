@@ -31,4 +31,4 @@
 		</div>
 	</header>
 	<div class="container">
-		<div class="bloque-rojo"></div>
+		<div class="bloque-rojo hidden-xs"></div>

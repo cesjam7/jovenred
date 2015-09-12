@@ -56,7 +56,7 @@ function special_nav_class($classes, $item){
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
 function adsense_lineal(){
-  echo '<center>
+  echo '<div class="adsense">
   <br>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- Enlaces index jovenred 728x15 -->
@@ -67,7 +67,7 @@ function adsense_lineal(){
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
-</center>';
+</div>';
 }
 
 // Limit character excerpt

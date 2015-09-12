@@ -22,12 +22,19 @@ a:hover {
 .page .bloque-rojo {
   height: 100px; }
 
+.adsense {
+  text-align: center;
+  width: 100%;
+  overflow: hidden; }
+
 .header {
   background: rgba(204, 2, 2, 0.8);
-  position: fixed;
   width: 100%;
   z-index: 2;
   padding: 10px; }
+  @media screen and (min-width: 720px) {
+    .header {
+      position: fixed; } }
   .header .logo {
     display: block;
     float: left; }
@@ -115,7 +122,6 @@ a:hover {
 .article {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   background: #fff;
-  padding: 50px 10%;
   margin-bottom: 40px; }
   .article h1 {
     line-height: 50px;

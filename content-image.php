@@ -6,8 +6,8 @@
 			<li><i class="fa fa-calendar-o"></i> <?php the_date('d/m/Y'); ?></li>
 			<li><i class="fa fa-comment-o"></i> <?php echo get_comments_number(); ?> comentarios</li>
 		</ul>
-		<figure class="mb20">
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full', array("class"=>"img-responsive-o")); ?></a>
+		<figure class="mb20 col-sm-8 col-sm-offset-2">
+			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array("class"=>"img-responsive-o")); ?></a>
 		</figure>
 		<div class="clearfix"></div>
 		<?php the_excerpt(); ?>
